@@ -145,8 +145,8 @@ nnoremap <c-l> <c-w><c-l>
 nnoremap <c-h> <c-w><c-h>
 
 " Buffer navigation
-nmap <leader>bv :bp<cr>
-nmap <leader>bn :bn<cr>
+nmap <leader>p :bp<cr>
+nmap <leader>n :bn<cr>
 nmap <leader>bd :bd<cr>
 
 " Disable arrow keys
