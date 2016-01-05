@@ -135,7 +135,7 @@ nmap <leader>g :call phpcomplete#JumpToDefinition('normal')<cr>
 nmap <leader>G :call phpcomplete#JumpToDefinition('vsplit')<cr>
 
 " NERDTree
-nmap <leader>nt :NERDTreeToggle<cr>
+nmap <leader>t :NERDTreeToggle<cr>
 
 " Remove research highlighting
 nmap <leader>h :noh<cr>
