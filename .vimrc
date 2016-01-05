@@ -31,6 +31,7 @@ set relativenumber " relative line numbering
 set ruler          " status line displays file full path
 set nowrap         " don't wrap long lines
 set scrolloff=3    " at least 3 lines visible aroud the cursor
+set scrolljump=5   " Niumber of lines to scroll when the cursor leaves the screee
 set visualbell   " Empeche Vim de beeper
 set noerrorbells " Idem
 set hidden       " Current buffer can be put into background
@@ -106,6 +107,11 @@ let g:syntastic_error_symbol = "✗"
 let g:syntastic_warning_symbol = "⚠"
 let g:syntastic_php_checkers = ['php', 'phpmd']
 
+" Easy align
+xmap ga <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)
+map <leader>= gaip=
+
 """""""""""""""""""""""""""
 " Key bindings
 """""""""""""""""""""""""""
@@ -119,7 +125,7 @@ nnoremap <leader>q :q<cr>
 
 " Save file (the 1st one was used before that's why I used 'noremap')
 nnoremap <leader>, :w<cr>
-imap <leader>, <Esc>:w<cr>
+inoremap <leader>, <Esc>:w<cr>
 
 " Remove trailing spaces
 nmap <leader><space> :%s/\s\+$<cr>
