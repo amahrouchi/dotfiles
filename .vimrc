@@ -53,7 +53,7 @@ filetype plugin on
 filetype indent on
 
 " Tags
-set tagcase=match " Case config when searching for tags, followic means : same as ignorecase parameter
+"set tagcase="match" " Case config when searching for tags, followic means : same as ignorecase parameter
 set tags=./.git/ctags;$HOME
 
 " Load 1st ctags file found in current folder and its parents
