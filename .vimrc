@@ -52,11 +52,15 @@ filetype on
 filetype plugin on
 filetype indent on
 
+" Tags
+set tagcase=match " Case config when searching for tags, followic means : same as ignorecase parameter
+set tags=./.git/ctags;$HOME
+
 " Load 1st ctags file found in current folder and its parents
- let FILETAG=expand("./tags")
- if filereadable(FILETAG)
-     set tags=tags
- endif
+"let FILETAG=expand("./tags")
+"if filereadable(FILETAG)
+    "set tags=tags
+"endif
 
 " Improve autocomplete behaviour
 set completeopt=longest,menuone
@@ -69,6 +73,7 @@ set completeopt=longest,menuone
 " Init Pathogen
 let g:pathogen_disabled = []
 call add(g:pathogen_disabled, 'ultisnips')
+call add(g:pathogen_disabled, 'snipmate')
 execute pathogen#infect()
 
 " Trim trailing white spaces
@@ -109,8 +114,11 @@ let g:syntastic_php_checkers = ['php', 'phpmd']
 imap ;; <Esc>
 map ;; <Esc>
 
+" Exit
+nnoremap <leader>q :q<cr>
+
 " Save file (the 1st one was used before that's why I used 'noremap')
-noremap <leader>, :w<cr>
+nnoremap <leader>, :w<cr>
 imap <leader>, <Esc>:w<cr>
 
 " Remove trailing spaces
