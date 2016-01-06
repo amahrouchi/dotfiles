@@ -1,4 +1,3 @@
-
 " Map leader
 let mapleader = ","
 
@@ -23,7 +22,7 @@ set list
 
 " User interface
 set guifont=Liberation_Mono_for_Powerline:h13
-" set antialias
+set antialias
 set nocompatible   " disable Vi compatibility
 set title          " set title in the current window
 set number         " display line numbers
@@ -37,6 +36,7 @@ set noerrorbells " Idem
 set hidden       " Current buffer can be put into background
 set showcmd      " Show incomplete commands
 set noshowmode " Don't show current mode (already visible in airline)
+set updatetime=1000 " VIM refresh time"
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o " Disable auto comment
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP " Enable PHP completion
 
