@@ -55,7 +55,7 @@ filetype indent on
 
 " Tags
 "set tagcase="match" " Case config when searching for tags, followic means : same as ignorecase parameter
-set tags=./.git/ctags;$HOME
+set tags=./.git/ctags,./.git/tags;$HOME
 
 " Load 1st ctags file found in current folder and its parents
 "let FILETAG=expand("./tags")
@@ -139,6 +139,9 @@ nmap <leader>t :NERDTreeToggle<cr>
 
 " Remove research highlighting
 nmap <leader>h :noh<cr>
+
+" Autocomplete
+inoremap <leader>c <c-x><c-o>
 
 " PDV DocBlock generation
 "let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"
