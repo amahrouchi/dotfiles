@@ -1,0 +1,8 @@
+--recurse
+--exclude=".git"
+--totals=yes
+--tag-relative=yes
+--languages=php,javascript
+--PHP-kinds=+cfij-v
+--extra=+q
+-f .git/ctags
