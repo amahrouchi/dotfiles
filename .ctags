@@ -5,4 +5,4 @@
 --languages=php,javascript
 --PHP-kinds=+cfij-v
 --extra=+q
--f .git/ctags
+-f ctags
