@@ -123,6 +123,9 @@ map ;; <Esc>
 " Exit
 nnoremap <leader>q :q<cr>
 
+" Easy Motion plugin
+map <Leader> <Plug>(easymotion-prefix)
+
 " Save file (the 1st one was used before that's why I used 'noremap')
 nnoremap <leader>, :w<cr>
 inoremap <leader>, <Esc>:w<cr>
