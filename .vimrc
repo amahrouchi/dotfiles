@@ -55,7 +55,7 @@ filetype indent on
 
 " Tags
 "set tagcase="match" " Case config when searching for tags, followic means : same as ignorecase parameter
-set tags=./ctags,./tags;$HOME
+set tags=./ctags;$HOME,./tags;$HOME
 
 " Load 1st ctags file found in current folder and its parents
 "let FILETAG=expand("./tags")
