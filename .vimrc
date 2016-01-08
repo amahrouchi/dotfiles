@@ -1,5 +1,5 @@
 " Map leader
-let mapleader = ","
+let mapleader = ";"
 
 " Encoding
 set encoding=utf8
@@ -117,18 +117,18 @@ map <leader>= gaip=
 """""""""""""""""""""""""""
 
 " Remap ESC key
-imap ;; <Esc>
-map ;; <Esc>
+imap <leader><leader> <Esc>
+map <leader><leader> <Esc>
 
 " Exit
 nnoremap <leader>q :q<cr>
 
 " Easy Motion plugin
-map <Leader> <Plug>(easymotion-prefix)
+"map <Leader> <Plug>(easymotion-prefix)
 
 " Save file (the 1st one was used before that's why I used 'noremap')
-nnoremap <leader>, :w<cr>
-inoremap <leader>, <Esc>:w<cr>
+nnoremap <leader>w :w<cr>
+inoremap <leader>w <Esc>:w<cr>
 
 " Remove trailing spaces
 nmap <leader><space> :%s/\s\+$<cr>
