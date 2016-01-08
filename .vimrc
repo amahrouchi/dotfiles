@@ -117,8 +117,8 @@ map <leader>= gaip=
 """""""""""""""""""""""""""
 
 " Remap ESC key
-imap <leader><leader> <Esc>
-map <leader><leader> <Esc>
+imap ,, <Esc>
+map ,, <Esc>
 
 " Exit
 nnoremap <leader>q :q<cr>
