@@ -1,5 +1,5 @@
 " Map leader
-let mapleader = ";"
+let mapleader = ","
 
 " Encoding
 set encoding=utf8
@@ -117,18 +117,16 @@ map <leader>= gaip=
 """""""""""""""""""""""""""
 
 " Remap ESC key
-imap ,, <Esc>
-map ,, <Esc>
+imap ;; <Esc>
+map ;; <Esc>
 
 " Exit
 nnoremap <leader>q :q<cr>
 
 " Easy Motion plugin
-map ù <Plug>(easymotion-prefix)
+map \ <Plug>(easymotion-prefix)
 
 " Save file (the 1st one was used before that's why I used 'noremap')
-nnoremap <leader>w :w<cr>
-inoremap <leader>w <Esc>:w<cr>
 nnoremap <leader><leader> :w<cr>
 inoremap <leader><leader> <Esc>:w<cr>
 
@@ -137,8 +135,8 @@ nmap <leader><space> :%s/\s\+$<cr>
 
 " Go to definition
 "nmap <leader>g :call phpcomplete#JumpToDefinition('normal')<cr>
-nmap <leader>g <c-]>
-nmap <leader>G :call phpcomplete#JumpToDefinition('vsplit')<cr>
+"nmap <leader>g <c-]>
+"nmap <leader>G :call phpcomplete#JumpToDefinition('vsplit')<cr>
 
 " NERDTree
 nmap <leader>t :NERDTreeToggle<cr>
@@ -147,7 +145,7 @@ nmap <leader>t :NERDTreeToggle<cr>
 nmap <leader>h :noh<cr>
 
 " Autocomplete
-inoremap <leader>c <c-x><c-o>
+"inoremap <leader>c <c-x><c-o>
 
 " PDV DocBlock generation
 "let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"
