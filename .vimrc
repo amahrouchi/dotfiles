@@ -124,17 +124,20 @@ map ,, <Esc>
 nnoremap <leader>q :q<cr>
 
 " Easy Motion plugin
-"map <Leader> <Plug>(easymotion-prefix)
+map ù <Plug>(easymotion-prefix)
 
 " Save file (the 1st one was used before that's why I used 'noremap')
 nnoremap <leader>w :w<cr>
 inoremap <leader>w <Esc>:w<cr>
+nnoremap <leader><leader> :w<cr>
+inoremap <leader><leader> <Esc>:w<cr>
 
 " Remove trailing spaces
 nmap <leader><space> :%s/\s\+$<cr>
 
 " Go to definition
-nmap <leader>g :call phpcomplete#JumpToDefinition('normal')<cr>
+"nmap <leader>g :call phpcomplete#JumpToDefinition('normal')<cr>
+nmap <leader>g <c-]>
 nmap <leader>G :call phpcomplete#JumpToDefinition('vsplit')<cr>
 
 " NERDTree
