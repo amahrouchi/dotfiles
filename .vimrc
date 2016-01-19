@@ -107,6 +107,9 @@ let g:syntastic_error_symbol = "✗"
 let g:syntastic_warning_symbol = "⚠"
 let g:syntastic_php_checkers = ['php', 'phpmd']
 
+" Ctrl-P
+let g:ctrlp_working_path_mode = 0
+
 " Easy align
 xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
@@ -125,6 +128,7 @@ nnoremap <leader>q :q<cr>
 
 " Easy Motion plugin
 map \ <Plug>(easymotion-prefix)
+map ù <Plug>(easymotion-prefix)
 
 " Save file (the 1st one was used before that's why I used 'noremap')
 nnoremap <leader><leader> :w<cr>
@@ -135,11 +139,12 @@ nmap <leader><space> :%s/\s\+$<cr>
 
 " Go to definition
 "nmap <leader>g :call phpcomplete#JumpToDefinition('normal')<cr>
-"nmap <leader>g <c-]>
-"nmap <leader>G :call phpcomplete#JumpToDefinition('vsplit')<cr>
+nmap <leader>g <c-]>
+nmap <leader>G :call phpcomplete#JumpToDefinition('vsplit')<cr>
 
 " NERDTree
 nmap <leader>t :NERDTreeToggle<cr>
+nmap <leader>T :TagbarToggle<cr>
 
 " Remove research highlighting
 nmap <leader>h :noh<cr>
@@ -148,8 +153,8 @@ nmap <leader>h :noh<cr>
 "inoremap <leader>c <c-x><c-o>
 
 " PDV DocBlock generation
-"let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"
-"nnoremap <leader>d :call pdv#DocumentCurrentLine()<CR>
+let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates"
+nnoremap <leader>d :call pdv#DocumentCurrentLine()<CR>
 
 " Move between splits
 nnoremap <c-j> <c-w><c-j>
