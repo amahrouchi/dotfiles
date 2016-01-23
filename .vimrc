@@ -28,7 +28,7 @@ set title          " set title in the current window
 set number         " display line numbers
 set relativenumber " relative line numbering
 set ruler          " status line displays file full path
-set nowrap         " don't wrap long lines
+set wrap           " don't wrap long lines
 set scrolloff=3    " at least 3 lines visible aroud the cursor
 set scrolljump=5   " Niumber of lines to scroll when the cursor leaves the screee
 set visualbell   " Empeche Vim de beeper
