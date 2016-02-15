@@ -1,6 +1,12 @@
 " Map leader
 let mapleader = ","
 
+" Syntax highlighting
+syntax enable
+filetype on
+filetype plugin on
+filetype indent on
+
 " Encoding
 set encoding=utf8
 
@@ -39,6 +45,7 @@ set noshowmode " Don't show current mode (already visible in airline)
 set updatetime=1000 " VIM refresh time"
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o " Disable auto comment
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP " Enable PHP completion
+autocmd FileType twig set syntax=html
 
 " Search
 set ignorecase  " ignore case when searching
@@ -46,12 +53,6 @@ set smartcase   " Reactive la casse si dans la recherche il y a une majuscule
 set incsearch   " Surligne les résultats de la recherche pendans la frappe
 set hlsearch    " Surligne les résultats de recherche
 set cursorline  " Highlight current line
-
-" Syntax highlighting
-syntax enable
-filetype on
-filetype plugin on
-filetype indent on
 
 " Tags
 "set tagcase="match" " Case config when searching for tags, followic means : same as ignorecase parameter
