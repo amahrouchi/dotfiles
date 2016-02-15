@@ -149,6 +149,12 @@ nmap <leader>T :TagbarToggle<cr>
 " Remove research highlighting
 nmap <leader>h :noh<cr>
 
+" Show errors
+nmap <leader>e :lopen<cr>
+
+" Collapse code
+nmap z{ zfi{
+
 " Autocomplete
 "inoremap <leader>c <c-x><c-o>
 
@@ -166,6 +172,7 @@ nnoremap <c-h> <c-w><c-h>
 nmap <leader>p :bp<cr>
 nmap <leader>n :bn<cr>
 nmap <leader>bd :bd<cr>
+nmap <leader>bb :buffers<cr>
 
 " Disable arrow keys
 map <up> <nop>
