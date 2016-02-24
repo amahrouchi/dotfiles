@@ -156,6 +156,9 @@ nmap <leader>e :lopen<cr>
 " Collapse code
 nmap z{ zfi{
 
+" Quick search current word
+map ,* *<C-O>:%s///gn<CR>
+
 " Autocomplete
 "inoremap <leader>c <c-x><c-o>
 
