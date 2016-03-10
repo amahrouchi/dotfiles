@@ -110,6 +110,7 @@ let g:syntastic_php_checkers = ['php', 'phpmd']
 
 " Ctrl-P
 let g:ctrlp_working_path_mode = 0
+let g:ctrlp_show_hidden = 1
 
 " Easy align
 xmap ga <Plug>(EasyAlign)
