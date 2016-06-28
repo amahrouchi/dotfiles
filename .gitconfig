@@ -1,0 +1,24 @@
+[core]
+    excludesfile = /Users/angelomahrouchi/.gitignore_global
+[difftool "sourcetree"]
+    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+    path = 
+[mergetool "sourcetree"]
+    cmd = /Applications/Git/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+    trustExitCode = true
+[user]
+    name = Angelo Mahrouchi
+    email = angelo.mahrouchi@believedigital.com
+[filter "lfs"]
+    required = true
+    clean = git-lfs clean %f
+    smudge = git-lfs smudge %f
+[alias]
+    st = status
+    co = checkout
+    cm = commit
+    br = branch
+    pl = pull
+    ps = push
+[push]
+	default = simple
