@@ -23,5 +23,6 @@
     mg = merge
     sl = stash list
     ss = stash save -u
+    sa = stash apply
 [push]
 	default = simple
