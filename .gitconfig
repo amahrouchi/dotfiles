@@ -20,9 +20,11 @@
     br = branch
     pl = pull
     ps = push
+    pso = push -u origin HEAD
     mg = merge
     sl = stash list
     ss = stash save -u
     sa = stash apply
+    fp = fetch -p
 [push]
 	default = simple
