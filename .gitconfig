@@ -22,11 +22,11 @@
     ps = push
     pso = push -u origin HEAD
     mg = merge
+    rb = rebase
     sl = stash list
     ss = stash save -u
     sa = stash apply
     fp = fetch -p
-    pso = push -u origin HEAD
     psf = push -f
 [push]
 	default = simple
