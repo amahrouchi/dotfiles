@@ -19,6 +19,14 @@ if [ -f /Applications/Git/SourceTree.app/Contents/Resources/git_local/contrib/co
     export export PS1="\[\033[01;32m\]\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\033[01;31m\]\$(__git_ps1)\[\033[00m\]$\[\033[00m\] "
 fi
 
+# GIT (MacOS)
+#export GIT_PS1_SHOWDIRTYSTATE=1 GIT_PS1_SHOWSTASHSTATE=1 GIT_PS1_SHOWUNTRACKEDFILES=1
+#export GIT_PS1_SHOWUPSTREAM=verbose GIT_PS1_DESCRIBE_STYLE=branch
+#source /opt/homebrew/Cellar/git/2.45.2/etc/bash_completion.d/git-prompt.sh
+#precmd() {
+#    export PS1="%B%F{green}angelo@AKS%F{15}:%F{blue}%1d%F{red}$(__git_ps1)%F{15}%b$ "
+#}
+
 # Add my bin folder to the PATH
 PATH=$PATH:~/bin
 
