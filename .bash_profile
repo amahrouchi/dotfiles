@@ -27,6 +27,11 @@ fi
 #    export PS1="%B%F{green}angelo@AKS%F{15}:%F{blue}%1d%F{red}$(__git_ps1)%F{15}%b$ "
 #}
 
+# Golang
+#export GO111MODULE=auto
+#export GOPATH=$HOME/Documents/repos/go
+#export GOPRIVATE=github.com/ankorstore
+
 # Add my bin folder to the PATH
 PATH=$PATH:~/bin
 
